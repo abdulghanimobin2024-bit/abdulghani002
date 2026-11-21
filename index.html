@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ============================================================
+    ABDUL GHANI — PERSONAL PORTFOLIO
+    HOW TO UPDATE THIS SITE (no build step, just edit & push):
+    1. Profile photo  -> replace img/profile.jpg (square works best)
+    2. Name / text    -> search this file for "Abdul Ghani"
+    3. Skills         -> edit the #skills section below
+    4. Projects       -> edit the #projects section below
+    5. Contact email -> search for "TODO:" in the #contact section
+    6. Resume         -> replace resume.pdf with your real resume, then re-add the download link (see #contact comment)
+  ============================================================= -->
+  <title>Abdul Ghani — Software Developer | Diploma CSE Portfolio</title>
+  <meta name="description" content="Abdul Ghani, Diploma in Computer Science Engineering student (5th Semester, Andhra Pradesh, India). Aspiring Software / Web / Backend Developer skilled in Python, SQL, HTML, CSS, JavaScript and React.js. View projects, skills and contact details." />
+  <meta name="author" content="Abdul Ghani" />
+  <meta name="theme-color" content="#050508" />
+  <meta property="og:title" content="Abdul Ghani — Software Developer" />
+  <meta property="og:description" content="Diploma CSE student building web apps with Python, SQL, JavaScript and React.js. Explore my projects and get in touch." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2360a5fa'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23070710'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='32' font-weight='bold' text-anchor='middle' fill='url(%23g)'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"><span class="glow glow-1"></span><span class="glow glow-2"></span><span class="glow glow-3"></span></div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <!-- TODO: update initials if you change the name -->
+      <a href="#home" class="logo" aria-label="Abdul Ghani — home"><span class="logo-mark">A</span><span class="logo-text">Abdul Ghani</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <!-- Resume button removed: no real resume uploaded yet. Re-add a download link here after replacing resume.pdf with the real file. -->
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= 1. HOME / HERO ================= -->
+    <section class="hero container" id="home">
+      <div class="hero-text">
+        <p class="hero-eyebrow reveal"><span class="pulse-dot"></span>Available for internships &amp; entry-level roles</p>
+        <h1 class="reveal">Hi, I'm <span class="gradient-text">Abdul Ghani</span></h1>
+        <p class="hero-role reveal">Diploma CSE Student &nbsp;·&nbsp; <span class="typing" id="typing" aria-label="Aspiring Software Developer"></span><span class="caret" aria-hidden="true"></span></p>
+        <p class="hero-sub reveal">5th-semester Diploma in Computer Science Engineering student from Andhra Pradesh, India. I build web applications with Python, SQL and React.js — and I'm working toward becoming a Software / Web / Backend Developer.</p>
+        <div class="hero-buttons reveal">
+          <a href="#projects" class="btn btn-gradient">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <!-- Social links removed: no real profiles provided yet. Add them here when ready. -->
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <!-- To update your photo, replace img/profile.jpg with a new square photo -->
+          <img src="img/profile.jpg" alt="Portrait of Abdul Ghani" width="900" height="886" fetchpriority="high" onerror="this.parentElement.classList.add('photo-fallback');this.remove()" />
+          <span class="photo-ring" aria-hidden="true"></span>
+        </div>
+        <div class="hero-card glass">
+          <p class="hero-card-title"><span class="code-pink">const</span> <span class="code-blue">developer</span> = {</p>
+          <p>&nbsp;&nbsp;focus: <span class="code-green">'web &amp; backend'</span>,</p>
+          <p>&nbsp;&nbsp;stack: [<span class="code-green">'python', 'sql', 'react'</span>],</p>
+          <p>&nbsp;&nbsp;openToWork: <span class="code-orange">true</span></p>
+          <p>};</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. ABOUT ME ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-eyebrow reveal">// about me</p>
+        <h2 class="section-title reveal">Turning curiosity into <span class="gradient-text">working software</span></h2>
+        <div class="about-grid">
+          <div class="glass card reveal">
+            <p>I'm <strong>Abdul Ghani</strong>, a 5th-semester <strong>Diploma in Computer Science Engineering</strong> student based in <strong>Andhra Pradesh, India</strong>.</p>
+            <p>My technical interests are <strong>web development, Python, SQL, React.js and software development</strong>. I enjoy working across the stack — building Python backends, designing SQL/MySQL databases, and connecting them to clean, responsive React.js frontends.</p>
+            <p>My career goal is to become a <strong>Software Developer / Web Developer / Backend Developer</strong>, and I'm also keenly interested in <strong>cybersecurity</strong>. I'm currently looking for internships and entry-level opportunities where I can learn fast and contribute real code.</p>
+          </div>
+          <ul class="about-facts reveal">
+            <li class="glass"><span class="fact-label">Course</span><span class="fact-value">Diploma in CSE · 5th Sem</span></li>
+            <li class="glass"><span class="fact-label">Location</span><span class="fact-value">Andhra Pradesh, India</span></li>
+            <li class="glass"><span class="fact-label">Focus</span><span class="fact-value">Web · Backend · Databases</span></li>
+            <li class="glass"><span class="fact-label">Goal</span><span class="fact-value">Software Developer</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-eyebrow reveal">// technical skills</p>
+        <h2 class="section-title reveal">What I <span class="gradient-text">work with</span></h2>
+        <p class="section-sub reveal">A beginner student's skill set — basic foundations I'm building on, with React.js currently in progress.</p>
+        <div class="skills-grid">
+          <article class="glass skill-card reveal">
+            <div class="skill-head"><span class="skill-icon">🐍</span><h3>Python</h3><span class="skill-level">Basic to Intermediate</span></div>
+            <p>Scripting and backend logic for coursework and team projects.</p>
+          </article>
+          <article class="glass skill-card reveal">
+            <div class="skill-head"><span class="skill-icon">📄</span><h3>HTML</h3><span class="skill-level">Basic</span></div>
+            <p>Semantic page structure for simple responsive pages.</p>
+          </article>
+          <article class="glass skill-card reveal">
+            <div class="skill-head"><span class="skill-icon">🎨</span><h3>CSS</h3><span class="skill-level">Basic</span></div>
+            <p>Basic styling and layouts; still building experience.</p>
+          </article>
+          <article class="glass skill-card reveal">
+            <div class="skill-head"><span class="skill-icon">🗄️</span><h3>SQL</h3><span class="skill-level">Basic</span></div>
+            <p>Basic queries, joins and database operations.</p>
+          </article>
+          <article class="glass skill-card reveal">
+            <div class="skill-head"><span class="skill-icon">🐬</span><h3>MySQL</h3><span class="skill-level">Basic</span></div>
+            <p>Basic database creation and management for projects.</p>
+          </article>
+          <article class="glass skill-card reveal">
+            <div class="skill-head"><span class="skill-icon">⚡</span><h3>JavaScript</h3><span class="skill-level">Beginner</span></div>
+            <p>Beginner — DOM basics and dynamic page elements.</p>
+          </article>
+          <article class="glass skill-card reveal">
+            <div class="skill-head"><span class="skill-icon">⚛️</span><h3>React.js</h3><span class="skill-level">Currently Learning</span></div>
+            <p>Currently learning components, props and state.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-eyebrow reveal">// selected work</p>
+        <h2 class="section-title reveal">Featured <span class="gradient-text">projects</span></h2>
+        <p class="section-sub reveal">A selection of my work, including a team project and this portfolio site.</p>
+        <div class="projects-grid">
+          <article class="glass project-card reveal">
+            <div class="project-top"><span class="project-emoji">🌾</span><span class="project-badge">Team Project</span></div>
+            <h3>Agrivisi — Crop Yield Detection</h3>
+            <p>Agrivisi is a crop-related project developed as a team project. It involves a React.js frontend, Python backend and SQL database. My contribution focuses on backend development and database management.</p>
+            <div class="tags"><span>React.js</span><span>Python</span><span>SQL</span></div>
+            <div class="project-links">
+              <a href="https://sivasai22-a-agrivisi-phjw.bolt.host/" target="_blank" rel="noopener" class="btn btn-small btn-gradient">View Live Project</a>
+            </div>
+          </article>
+          <article class="glass project-card reveal">
+            <div class="project-top"><span class="project-emoji">💼</span><span class="project-badge">Solo Project</span></div>
+            <h3>Personal Portfolio Website</h3>
+            <p>This website — a professional developer portfolio showcasing my <strong>skills, projects, education and contact details</strong>. Dark premium theme, fully responsive, smooth scrolling and subtle animations.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span></div>
+            <div class="project-links">
+              <a href="#home" class="btn btn-small btn-gradient">You're here</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section-eyebrow reveal">// education</p>
+        <h2 class="section-title reveal">My <span class="gradient-text">education</span></h2>
+        <div class="timeline reveal">
+          <div class="timeline-item glass">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-date">2023 — Present</p>
+            <h3>Diploma in Computer Science Engineering</h3>
+            <p class="timeline-place">Polytechnic · Andhra Pradesh, India — 5th Semester</p>
+            <p>Core subjects include programming, databases and web technologies. Hands-on project work in Python backends, SQL/MySQL and React.js frontends.</p>
+            <div class="tags"><span>Python</span><span>DBMS</span><span>Web Tech</span><span>OOP</span></div>
+          </div>
+          <div class="timeline-item glass">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-date">Currently learning</p>
+            <h3>Self-directed upskilling</h3>
+            <p class="timeline-place">React.js · Backend development · Cybersecurity basics</p>
+            <p>Deepening React.js skills and exploring backend patterns and security fundamentals alongside coursework.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section-eyebrow reveal">// get in touch</p>
+        <h2 class="section-title reveal">Let's <span class="gradient-text">connect</span></h2>
+        <p class="section-sub reveal">I'm open to internships, entry-level roles and collaboration. Send a message through the form and I'll get back to you.</p>
+        <div class="contact-grid">
+          <div class="contact-links reveal">
+            <div class="glass contact-intro">
+              <h3>Contact Me</h3>
+              <p>The easiest way to reach me is through the message form. You can also reach me by email using the button below.</p>
+              <!-- TODO: replace the address below with your real email when ready -->
+              <p><a class="btn btn-small btn-outline" href="mailto:youremail@example.com">Email Me</a></p>
+              <p class="contact-hint">Email button uses a placeholder address you can edit later in the #contact section.</p>
+            </div>
+            <!-- Resume download removed: no real resume uploaded yet. Re-add a download link here after replacing resume.pdf with the real file. -->
+          </div>
+          <form class="glass contact-form reveal" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden-field" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+            <label>Your name<input type="text" name="name" placeholder="Jane Recruiter" required autocomplete="name" /></label>
+            <label>Your email<input type="email" name="email" placeholder="jane@company.com" required autocomplete="email" /></label>
+            <label>Message<textarea name="message" rows="5" placeholder="Hi Abdul, we'd like to talk about…" required></textarea></label>
+            <button type="submit" class="btn btn-gradient" id="sendBtn">Send Message</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Abdul Ghani · Diploma CSE · Andhra Pradesh, India</p>
+      <a href="#home" class="back-top" id="backTop" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
