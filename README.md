@@ -31,7 +31,7 @@ python3 -m http.server 8000
 | Email / GitHub / LinkedIn / phone | Search for `TODO:` — every placeholder is marked |
 | Resume | Replace `resume.pdf` with your file (keep the name) |
 
-Contact placeholders currently use `youremail@example.com`, `github.com/your-username`, `linkedin.com/in/your-username` and `+91 XXXXX XXXXX` — replace them with real details before sharing with recruiters.
+Contact placeholders currently use `abdulghanimobin2024@gmail.com`, `github.com/your-username`, `linkedin.com/in/your-username` and `+91 9949593534` — replace them with real details before sharing with recruiters.
 
 ## Deploy
 
