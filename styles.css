@@ -231,3 +231,35 @@ a { color: inherit; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
   .footer-inner { flex-direction: column; }
 }
+/* Social media buttons */
+.contact-grid {
+  grid-template-columns: 1fr;
+}
+
+.contact-links {
+  width: 100%;
+}
+
+.contact-intro {
+  width: 100%;
+}
+
+.social-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.social-links .btn {
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-links .btn:hover {
+  transform: translateY(-3px);
+}
