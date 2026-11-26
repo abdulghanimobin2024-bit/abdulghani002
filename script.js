@@ -59,7 +59,7 @@
 
   // ---- Typing effect for hero roles ----
   var roles = [
-    "Aspiring Software Developer",
+    "Aspiring Web Developer",
     "Web Developer in training",
     "Python & SQL Backend Builder",
     "React.js Learner"
